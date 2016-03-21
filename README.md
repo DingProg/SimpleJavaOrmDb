@@ -23,10 +23,10 @@
 			@DingColumn(name="id")
 			private String id;
 			//用户名
-			@DingColumn(name="id")
+			@DingColumn(name="name")
 			private String name;
 			//用户密码
-			@DingColumn(name="id")
+			@DingColumn(name="password")
 			private String password;
 		}
 		
