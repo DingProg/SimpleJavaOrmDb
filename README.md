@@ -1,2 +1,2 @@
-# SimpleJavaOrmDb
-¼òµ¥µÄjavaÁ¬½ÓMySqlÊı¾İ¿âORM
+ï»¿# SimpleJavaOrmDb
+ç®€å•çš„javaè¿æ¥MySqlæ•°æ®åº“ORM
