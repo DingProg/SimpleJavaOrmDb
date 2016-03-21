@@ -6,19 +6,19 @@ import com.ding.db.annotation.DingColumn;
 import com.ding.db.annotation.DingTable;
 
 /**
- * ²âÊÔÊµÌåÀà
- * @author ¶¡µÂ¸ß 2016Äê3ÔÂ21ÈÕ14:24:48
+ * æµ‹è¯•å®ä½“ç±»
+ * @author ä¸å¾·é«˜ 2016å¹´3æœˆ21æ—¥14:24:48
  *
  */
 @DingTable(name="test")
 public class TestBean implements Serializable{
 	@DingColumn(name="id")
 	private String id;
-	//ÓÃ»§Ãû
-	@DingColumn(name="id")
+	//ç”¨æˆ·å
+	@DingColumn(name="name")
 	private String name;
-	//ÓÃ»§ÃÜÂë
-	@DingColumn(name="id")
+	//ç”¨æˆ·å¯†ç 
+	@DingColumn(name="password")
 	private String password;
 	public String getId() {
 		return id;
