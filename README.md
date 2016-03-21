@@ -1,6 +1,8 @@
 ﻿# SimpleJavaOrmDb
 简单的java连接MySql数据库ORM
 
+
+
 db模块封装了数据库的基本操作
 	1.连接配置放在com.ding.db.constants ,可以修改为其他的方式数据库，注意切换libs下的jdbc
 		/**
