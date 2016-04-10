@@ -71,6 +71,7 @@ public class BaseDbOperate implements DbOperateIm,Serializable{
 		}finally{
 			closeResult(executeQuery);
 			closeStatement(createStatement);
+			DBConn.closeConnection(conn);
 		}
 		return list;
 	}
@@ -127,6 +128,7 @@ public class BaseDbOperate implements DbOperateIm,Serializable{
 			return false;
 		}finally{
 			closePreStatement(prepareStatement);
+			DBConn.closeConnection(conn);
 		}
 		return true;
 	}
@@ -244,6 +246,7 @@ public class BaseDbOperate implements DbOperateIm,Serializable{
 			return false;
 		}finally{
 			closePreStatement(prepareStatement);
+			DBConn.closeConnection(conn);
 		}
 	}
 }

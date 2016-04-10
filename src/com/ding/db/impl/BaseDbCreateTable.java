@@ -7,8 +7,10 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
+import com.ding.db.DBUtils;
 import com.ding.db.DbCreateTableIm;
 import com.ding.db.util.ClassAnnotation;
+import com.ding.db.util.DBConn;
 
 /** 
  * @author ¶¡µÂ¸ß
@@ -50,6 +52,7 @@ public class BaseDbCreateTable extends BaseDbOperate implements DbCreateTableIm{
 			return false;
 		}finally{
 			closePreStatement(prepareStatement);
+			DBConn.closeConnection(conn);
 			return true;
 		}
 	}
@@ -91,6 +94,7 @@ public class BaseDbCreateTable extends BaseDbOperate implements DbCreateTableIm{
 			return false;
 		}finally{
 			closePreStatement(prepareStatement);
+			DBConn.closeConnection(conn);
 			return true;
 		}
 	}

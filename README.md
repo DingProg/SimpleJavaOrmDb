@@ -57,4 +57,8 @@
 		 * @return
 		 */
 		public boolean execSql(String sql);
+		
+	5.替换数据库连接 增加数据库连接池的使用c3p0
+		ConnectionManager cm = ConnectionManager.getInstance();
+		Connection conn = cm.getConnection();
 	

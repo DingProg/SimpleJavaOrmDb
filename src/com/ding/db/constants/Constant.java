@@ -18,6 +18,11 @@ public interface Constant {
 	 */
 	public static final String DB_USER_PASSWORD="123";
 	
+	/**
+	 * 
+	 */
+	public static final String DB_DRVIER_CLASS="com.mysql.jdbc.Driver";
+	
 	
 
 }
